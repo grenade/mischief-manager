@@ -1,0 +1,18 @@
+[package]
+name = "mischief-manager"
+version = "0.1.0"
+authors = ["grenade <rthijssen@gmail.com>"]
+edition = "2018"
+description = "mischief manager is a taskcluster decision and child task executor, written in rust"
+documentation = "https://github.com/grenade/mischief-manager/wiki"
+homepage = "https://github.com/grenade/mischief-manager"
+repository = "readme.md"
+readme = "..."
+keywords = ["taskcluster", "decision task"]
+categories = ["development-tools::build-utils"]
+
+[dependencies]
+clap = "2.32.0"
+uuid = { version = "0.7", features = ["v4"] }
+rusoto_core = "0.36.0"
+rusoto_ec2 = "0.36.0"
